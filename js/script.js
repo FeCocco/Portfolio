@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ==========================
-       1. TROCA DE TEMA
-       ========================== */
+    /* ========================== TEMA ========================== */
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     const htmlEl = document.documentElement;
 
@@ -26,9 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    /* ==================================
-       2. ANIMAÇÃO DE SCROLL (REVERSÍVEL)
-       ================================== */
+    /* ================================== ANIMACAO DE SCROLL ================================== */
     const animatedElements = document.querySelectorAll('.scroll-animate');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -40,9 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    /* ==================================
-       3. LINK ATIVO NO MENU COM SCROLL
-       ================================== */
+    /* ================================== LINK ATIVO NO MENU ================================== */
     const navLinks = document.querySelectorAll('.nav-link');
     const allSections = document.querySelectorAll('main section');
 
@@ -62,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* =================================
-       5. LÓGICA DE TRADUÇÃO (I18N)
-       ================================= */
+    /* ================================= TRADUCAO ================================= */
     const langOptions = document.querySelectorAll('.lang-option');
     let translations = {};
 
@@ -93,12 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const initialLang = localStorage.getItem('language') || (navigator.language.startsWith('pt') ? 'pt' : 'en');
-    setLanguage(initialLang);
-
-    /* =================================
-       6. LÓGICA DO MODAL DE HABILIDADES
-       ================================= */
+    /* ================================= HABILIDADES ================================= */
     const skillTags = document.querySelectorAll('.skill-tag');
     const modalOverlay = document.getElementById('skill-modal-overlay');
     const modalTitle = document.getElementById('skill-modal-title');
@@ -107,26 +94,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const openModal = (skill, description) => {
         modalTitle.innerText = skill;
-        modalDescription.innerText = description;
-        modalOverlay.style.display = 'flex';
-        setTimeout(() => {
-            modalOverlay.classList.add('visible');
-            document.body.style.overflow = 'hidden';
-        }, 10);
+        modalDescription.innerText = description || "Descrição não encontrada."; // Fallback
+        modalOverlay.classList.add('visible'); // Apenas adiciona a classe
+        document.body.style.overflow = 'hidden';
     };
 
     const closeModal = () => {
         modalOverlay.classList.remove('visible');
-        setTimeout(() => {
-            modalOverlay.style.display = 'none';
-            document.body.style.overflow = '';
-        }, 300);
+        document.body.style.overflow = ''; // Remove o style inline ao fechar
     };
 
     skillTags.forEach(tag => {
         tag.addEventListener('click', () => {
             const skill = tag.getAttribute('data-skill');
-            const description = tag.getAttribute('data-description');
+            // MODIFICAÇÃO PRINCIPAL AQUI
+            // Busca a descrição dentro do objeto de traduções já carregado
+            const description = translations.skills && translations.skills[skill]
+                ? translations.skills[skill]
+                : '';
             openModal(skill, description);
         });
     });
@@ -140,4 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // Inicializa o idioma no final para garantir que 'translations' seja populado
+    const initialLang = localStorage.getItem('language') || (navigator.language.startsWith('pt') ? 'pt' : 'en');
+    setLanguage(initialLang);
 });

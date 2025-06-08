@@ -12,6 +12,18 @@
   "aboutParagraph": "Sou estudante de Sistemas de Informação na <a href='https://www.fho.edu.br/' target='_blank' class='json-link'>FHO</a>, atualmente estagiário na área de TI da <a href='https://www.brascabos.com.br/' target='_blank' class='json-link'>Brascabos</a>. Tenho experiência prática em infraestrutura de redes, automação e desenvolvimento de software, com conhecimentos em linguagens como PHP, Java, C/C++, HTML, CSS e JavaScript. Estou sempre em busca de novos aprendizados, projetos desafiadores e oportunidades para crescer como desenvolvedor. Meu objetivo é migrar definitivamente para a área de desenvolvimento, aplicando boas práticas de código, foco em soluções e trabalho em equipe.",
   "aboutButton": "Fale Comigo",
   "aboutSkillsTitle": "Minhas Habilidades:",
+  "skills": {
+    "HTML": "Domínio completo da estruturação semântica de páginas web, garantindo acessibilidade e otimização para motores de busca.",
+    "CSS": "Experiência com layouts responsivos usando Flexbox e Grid, além de animações avançadas.",
+    "JavaScript": "Conhecimento sólido de ES6+, manipulação do DOM, e consumo de APIs (Fetch/Axios) para criar interações dinâmicas.",
+    "React": "Criação de componentes reutilizáveis, gerenciamento de estado (Hooks, Context API) e desenvolvimento de SPAs (Single Page Applications).",
+    "SQL": "Experiência com modelagem de dados e consultas em bancos de dados relacionais como PostgreSQL e MySQL.",
+    "Git": "Uso para versionamento de código, branches, pull requests e colaboração em equipe via GitHub.",
+    "C/C++": "Conhecimento em programação de baixo nível, estruturas de dados e algoritmos com C e C++.",
+    "Java": "Desenvolvimento de aplicações robustas e escaláveis com o ecossistema Java.",
+    "PHP": "Experiência no desenvolvimento de aplicações web do lado do servidor.",
+    "Python": "Uso de Python para automação de tarefas, scripts e desenvolvimento de back-end."
+  },
   "projectsTitle": "Projetos",
   "projectsSubtitle": "Meus Trabalhos Recentes",
   "project1Title": "e-Move",
@@ -19,7 +31,7 @@
   "project1Link": "Ver no GitHub",
   "contactTitle": "Contato",
   "contactSubtitle": "Entre em Contato",
-  "contactParagraph": "Estou disponível para freelance e novos projetos. Se você tem uma ideia, vamos conversar!",
+  "contactParagraph": "Estou disponível para trabalhos freelance e oportunidades profissionais em tempo parcial ou integral. Se sua empresa está em busca de alguém comprometido e com vontade de crescer, vamos conversar!",
   "contactButton": "Mande um E-mail",
-  "footerText": "&copy; 2025 Felipe G. Cocco. Todos os direitos reservados."
+  "footerText": "&copy; 2025 Felipe Giacomini Cocco. Todos os direitos reservados."
 }
