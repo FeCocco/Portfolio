@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe G. Cocco | Desenvolvedor Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+<div class="content-wrapper">
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">FelipeDev</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active" data-key="navInicio"></a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link" data-key="navSobre"></a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link" data-key="navProjetos"></a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link" data-key="navContato"></a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <div class="actions-container">
+                    <div class="language-selector">
+                        <span class="lang-option active" data-lang="pt">PT</span>
+                        <span class="lang-option" data-lang="en">EN</span>
+                    </div>
+                    <i class="fa-solid fa-moon theme-toggle" id="theme-toggle-btn"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="section hero">
+            <div class="hero-container container grid">
+                <div class="hero-content">
+                    <h4 class="scroll-animate" data-key="heroGreeting"></h4>
+                    <h1 class="scroll-animate" style="transition-delay: 100ms;" data-key="heroName"></h1>
+                    <p class="scroll-animate" style="transition-delay: 200ms;" data-key="heroSubtitle"></p>
+                    <div class="hero-social scroll-animate" style="transition-delay: 300ms;">
+                        <a href="https://github.com/FelipeCocco" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/felipe-giacomini-cocco-73b30a1b3/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/felipeg.cocco/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="scroll-animate" style="transition-delay: 400ms;">
+                        <a href="#projetos" class="btn"><span data-key="heroButton"></span></a>
+                    </div>
+                </div>
+                <div class="hero-image scroll-animate" style="transition-delay: 200ms;">
+                    <img src="./felipe.png" alt="Foto de Felipe Cocco">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title scroll-animate" data-key="aboutTitle"></h2>
+                <span class="section-subtitle scroll-animate" style="transition-delay: 100ms;" data-key="aboutSubtitle"></span>
+                <div class="about-container grid">
+                    <div class="about-content">
+                        <p class="scroll-animate" data-key="aboutParagraph"></p>
+                        <div class="scroll-animate" style="transition-delay: 100ms;">
+                            <a href="#contato" class="btn"><span data-key="aboutButton"></span></a>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h3 class="scroll-animate" data-key="aboutSkillsTitle"></h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag scroll-animate" data-skill="HTML" data-description="Domínio completo da estruturação semântica de páginas web, garantindo acessibilidade e SEO.">HTML</span>
+                            <span class="skill-tag scroll-animate" data-skill="CSS" data-description="Experiência com layouts responsivos usando Flexbox e Grid, além de animações avançadas e pré-processadores como SASS.">CSS</span>
+                            <span class="skill-tag scroll-animate" data-skill="JavaScript" data-description="Conhecimento sólido de ES6+, manipulação do DOM, e consumo de APIs (Fetch/Axios) para criar interações dinâmicas.">JavaScript</span>
+                            <span class="skill-tag scroll-animate" data-skill="React" data-description="Criação de componentes reutilizáveis, gerenciamento de estado (Hooks, Context API) e desenvolvimento de SPAs (Single Page Applications).">React</span>
+                            <span class="skill-tag scroll-animate" data-skill="SQL" data-description="Experiência com modelagem de dados e consultas complexas em bancos de dados relacionais como PostgreSQL e MySQL.">SQL</span>
+                            <span class="skill-tag scroll-animate" data-skill="Git" data-description="Uso diário para versionamento de código, trabalho com branches, pull requests e colaboração em equipe via GitHub.">Git</span>
+                            <span class="skill-tag scroll-animate" data-skill="C" data-description="Capacidade de traduzir protótipos de alta fidelidade do Figma em código pixel-perfect, colaborando de perto com a equipe de design.">C/C++</span>
+                            <span class="skill-tag scroll-animate" data-skill="Java" data-description="Capacidade de traduzir protótipos de alta fidelidade do Figma em código pixel-perfect, colaborando de perto com a equipe de design.">Java</span>
+                            <span class="skill-tag scroll-animate" data-skill="Python" data-description="Capacidade de traduzir protótipos de alta fidelidade do Figma em código pixel-perfect, colaborando de perto com a equipe de design.">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title scroll-animate" data-key="projectsTitle"></h2>
+                <span class="section-subtitle scroll-animate" style="transition-delay: 100ms;" data-key="projectsSubtitle"></span>
+                <div class="projects-container grid">
+                    <div class="project-card scroll-animate">
+                        <div class="project-data">
+                            <h3 data-key="project1Title"></h3>
+                            <p data-key="project1Desc"></p>
+                            <a href="https://github.com/FeCocco/e-Move.git" class="project-link"><span data-key="project1Link"></span> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title scroll-animate" data-key="contactTitle"></h2>
+                <span class="section-subtitle scroll-animate" style="transition-delay: 100ms;" data-key="contactSubtitle"></span>
+                <div class="contact-container">
+                    <p class="scroll-animate" style="transition-delay: 200ms;" data-key="contactParagraph"></p>
+                    <div class="scroll-animate" style="transition-delay: 300ms;">
+                        <a href="mailto:felipeg.cocco@gmail.com" class="btn btn-large">
+                            <span><span data-key="contactButton"></span> <i class="fa-solid fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div> <div id="skill-modal-overlay">
+    <div id="skill-modal">
+        <span id="modal-close-btn" class="close-btn">&times;</span>
+        <h3 id="skill-modal-title"></h3>
+        <p id="skill-modal-description"></p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container container">
+        <p data-key="footerText"></p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
