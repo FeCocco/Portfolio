@@ -38,7 +38,7 @@
   "courses": {
     "course1": "An all-in-one training program that consolidates 20 courses and 20 practical projects into a single journey. It covers the end-to-end web development ecosystem, from essential front-end technologies (HTML5, CSS3, Bootstrap, JavaScript) to robust back-end development with PHP and MySQL databases. The strong focus on hands-on projects ensures the application of knowledge in building a diverse and professional portfolio.",
     "course2": "Official Red Hat training (RH104) that provides a foundational understanding of the Linux operating system. This course covers essential command-line operations, file system navigation, user and group management, and basic security permissions, preparing for more advanced system administration tasks.",
-    "course2": "A fundamental course that offers a comprehensive overview of the world of cybersecurity. It explores the essential principles of digital protection, including the identification of common threats like malware, phishing, and social engineering. The content covers notions of network security, cryptography, and best practices for protecting personal and corporate data."
+    "course3": "A fundamental course that offers a comprehensive overview of the world of cybersecurity. It explores the essential principles of digital protection, including the identification of common threats like malware, phishing, and social engineering. The content covers notions of network security, cryptography, and best practices for protecting personal and corporate data."
   },
   "projectsTitle": "Projects",
   "projectsSubtitle": "My Recent Work",
