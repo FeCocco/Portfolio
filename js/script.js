@@ -85,34 +85,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ================================= HABILIDADES ================================= */
-    const skillTags = document.querySelectorAll('.skill-tag');
-    const modalOverlay = document.getElementById('skill-modal-overlay');
-    const modalTitle = document.getElementById('skill-modal-title');
-    const modalDescription = document.getElementById('skill-modal-description');
+    /* ================================= MODAL (HABILIDADES E CURSOS) ================================= */
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
     const closeModalBtn = document.getElementById('modal-close-btn');
 
-    const openModal = (skill, description) => {
-        modalTitle.innerText = skill;
-        modalDescription.innerText = description || "Descrição não encontrada."; // Fallback
-        modalOverlay.classList.add('visible'); // Apenas adiciona a classe
+    const openModal = (title, description) => {
+        modalTitle.innerText = title;
+        modalDescription.innerText = description || "Descrição não encontrada.";
+        modalOverlay.classList.add('visible');
         document.body.style.overflow = 'hidden';
     };
 
     const closeModal = () => {
         modalOverlay.classList.remove('visible');
-        document.body.style.overflow = ''; // Remove o style inline ao fechar
+        document.body.style.overflow = '';
     };
 
-    skillTags.forEach(tag => {
+    document.querySelectorAll('.skill-tag').forEach(tag => {
         tag.addEventListener('click', () => {
             const skill = tag.getAttribute('data-skill');
-            // MODIFICAÇÃO PRINCIPAL AQUI
-            // Busca a descrição dentro do objeto de traduções já carregado
-            const description = translations.skills && translations.skills[skill]
-                ? translations.skills[skill]
-                : '';
+            const description = translations.skills && translations.skills[skill] ? translations.skills[skill] : '';
             openModal(skill, description);
+        });
+    });
+
+    document.querySelectorAll('.course-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const courseKey = item.getAttribute('data-course');
+            const title = translations[`${courseKey}Name`];
+            const description = translations.courses && translations.courses[courseKey] ? translations.courses[courseKey] : '';
+            openModal(title, description);
         });
     });
 

@@ -1,4 +1,5 @@
 {
+  "logo": "Portfólio",
   "navInicio": "Início",
   "navSobre": "Sobre",
   "navProjetos": "Projetos",
@@ -12,6 +13,16 @@
   "aboutParagraph": "Sou estudante de Sistemas de Informação na <a href='https://www.fho.edu.br/' target='_blank' class='json-link'>FHO</a>, atualmente estagiário na área de TI da <a href='https://www.brascabos.com.br/' target='_blank' class='json-link'>Brascabos</a>. Tenho experiência prática em infraestrutura de redes, automação e desenvolvimento de software, com conhecimentos em linguagens como PHP, Java, C/C++, HTML, CSS e JavaScript. Estou sempre em busca de novos aprendizados, projetos desafiadores e oportunidades para crescer como desenvolvedor. Meu objetivo é migrar definitivamente para a área de desenvolvimento, aplicando boas práticas de código, foco em soluções e trabalho em equipe.",
   "aboutButton": "Fale Comigo",
   "aboutSkillsTitle": "Minhas Habilidades:",
+  "aboutCoursesTitle": "Cursos Complementares:",
+  "course1Name": "Desenvolvimento Web Completo",
+  "course1Institution": "Udemy",
+  "course1Duration": "120h",
+  "course2Name": "Linux Fundamentals (RH104)",
+  "course2Institution": "Red Hat",
+  "course2Duration": "16h",
+  "course3Name": "Introdução à Cibersegurança",
+  "course3Institution": "Cisco Networking Academy",
+  "course3Duration": "6h",
   "skills": {
     "HTML": "Domínio completo da estruturação semântica de páginas web, garantindo acessibilidade e otimização para motores de busca.",
     "CSS": "Experiência com layouts responsivos usando Flexbox e Grid, além de animações avançadas.",
@@ -23,6 +34,11 @@
     "Java": "Desenvolvimento de aplicações robustas e escaláveis com o ecossistema Java.",
     "PHP": "Experiência no desenvolvimento de aplicações web do lado do servidor.",
     "Python": "Uso de Python para automação de tarefas, scripts e desenvolvimento de back-end."
+  },
+  "courses": {
+    "course1": "Um programa de formação 'tudo em um' que consolida 20 cursos e 20 projetos práticos em uma única jornada. Abrange o ecossistema de desenvolvimento web de ponta a ponta, desde as tecnologias essenciais de front-end (HTML5, CSS3, Bootstrap, JavaScript) até o desenvolvimento back-end robusto com PHP e bancos de dados MySQL. O forte foco em projetos práticos garante a aplicação do conhecimento na construção de um portfólio diversificado e profissional.",
+    "course2": "Treinamento oficial da Red Hat (RH104) que fornece uma compreensão fundamental do sistema operacional Linux. Este curso abrange operações essenciais de linha de comando, navegação no sistema de arquivos, gerenciamento de usuários e grupos, e permissões básicas de segurança, preparando para tarefas mais avançadas de administração de sistemas.",
+    "course3": "Curso fundamental que oferece uma visão abrangente sobre o mundo da cibersegurança. Explora os princípios essenciais de proteção digital, incluindo a identificação de ameaças comuns como malware, phishing e engenharia social. O conteúdo abrange noções de segurança de redes, criptografia e as melhores práticas para a proteção de dados pessoais e corporativos."
   },
   "projectsTitle": "Projetos",
   "projectsSubtitle": "Meus Trabalhos Recentes",

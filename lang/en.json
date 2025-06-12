@@ -1,4 +1,5 @@
 {
+  "logo": "Portfolio",
   "navInicio": "Home",
   "navSobre": "About",
   "navProjetos": "Projects",
@@ -12,6 +13,16 @@
   "aboutParagraph": "Currently studying Information Systems at <a href='https://www.fho.edu.br/' target='_blank' class='json-link'>FHO</a>, currently working as an IT intern at <a href='https://www.brascabos.com.br/' target='_blank' class='json-link'>Brascabos</a>. I have hands-on experience with network infrastructure, automation, and software development, and I’m proficient in PHP, Java, C/C++, HTML, CSS, and JavaScript. I'm passionate about learning, solving problems, and collaborating on innovative projects. My main goal is to transition fully into the development area, contributing with clean code, scalable solutions, and teamwork.",
   "aboutButton": "Contact Me",
   "aboutSkillsTitle": "My Skills:",
+  "aboutCoursesTitle": "Complementary Courses:",
+  "course1Name": "Complete Web Development",
+  "course1Institution": "Udemy",
+  "course1Duration": "120h",
+  "course2Name": "Linux Fundamentals (RH104)",
+  "course2Institution": "Red Hat",
+  "course2Duration": "16h",
+  "course3Name": "Introduction to Cybersecurity",
+  "course3Institution": "Cisco Networking Academy",
+  "course3Duration": "6h",
   "skills": {
     "HTML": "Full domain of semantic web page structuring, ensuring accessibility and search engine optimization.",
     "CSS": "Experience with responsive layouts using Flexbox and Grid, as well as advanced animations and pre-processors.",
@@ -23,6 +34,11 @@
     "Java": "Development of robust and scalable applications with the Java ecosystem.",
     "PHP": "Experience in developing server-side web applications.",
     "Python": "Use of Python for task automation, scripting, and back-end development."
+  },
+  "courses": {
+    "course1": "An all-in-one training program that consolidates 20 courses and 20 practical projects into a single journey. It covers the end-to-end web development ecosystem, from essential front-end technologies (HTML5, CSS3, Bootstrap, JavaScript) to robust back-end development with PHP and MySQL databases. The strong focus on hands-on projects ensures the application of knowledge in building a diverse and professional portfolio.",
+    "course2": "Official Red Hat training (RH104) that provides a foundational understanding of the Linux operating system. This course covers essential command-line operations, file system navigation, user and group management, and basic security permissions, preparing for more advanced system administration tasks.",
+    "course2": "A fundamental course that offers a comprehensive overview of the world of cybersecurity. It explores the essential principles of digital protection, including the identification of common threats like malware, phishing, and social engineering. The content covers notions of network security, cryptography, and best practices for protecting personal and corporate data."
   },
   "projectsTitle": "Projects",
   "projectsSubtitle": "My Recent Work",

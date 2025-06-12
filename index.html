@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe G. Cocco | Desenvolvedor Web</title>
+    <title>Felipe | Desenvolvedor</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 <div class="content-wrapper">
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="nav-logo">FelipeDev</a>
+            <a href="#" class="nav-logo" data-key="logo"></a>
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#inicio" class="nav-link active" data-key="navInicio"></a></li>
@@ -40,7 +40,7 @@
 
     <main>
         <section id="inicio" class="section hero">
-            <div class="hero-container container grid">
+            <div class="hero-container container">
                 <div class="hero-content">
                     <h4 class="scroll-animate" data-key="heroGreeting"></h4>
                     <h1 class="scroll-animate" style="transition-delay: 100ms;" data-key="heroName"></h1>
@@ -64,7 +64,7 @@
             <div class="container">
                 <h2 class="section-title scroll-animate" data-key="aboutTitle"></h2>
                 <span class="section-subtitle scroll-animate" style="transition-delay: 100ms;" data-key="aboutSubtitle"></span>
-                <div class="about-container grid">
+                <div class="about-container">
                     <div class="about-content">
                         <p class="scroll-animate" data-key="aboutParagraph"></p>
                         <div class="scroll-animate" style="transition-delay: 100ms;">
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="about-skills">
-                        <h3 class="scroll-animate" data-key="aboutSkillsTitle"></h3>
+                        <h3 class="about-section-title scroll-animate" data-key="aboutSkillsTitle"></h3>
                         <div class="skills-grid">
                             <span class="skill-tag scroll-animate" data-skill="HTML">HTML</span>
                             <span class="skill-tag scroll-animate" data-skill="CSS">CSS</span>
@@ -85,6 +85,40 @@
                             <span class="skill-tag scroll-animate" data-skill="PHP">PHP</span>
                             <span class="skill-tag scroll-animate" data-skill="Python">Python</span>
                         </div>
+
+                        <h3 class="about-section-title scroll-animate" data-key="aboutCoursesTitle"></h3>
+                        <div class="courses-list">
+                            <div class="course-item scroll-animate" data-course="course1">
+                                <div class="course-details">
+                                    <span class="course-name" data-key="course1Name"></span>
+                                    <span class="course-institution" data-key="course1Institution"></span>
+                                </div>
+                                <div class="course-duration">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span data-key="course1Duration"></span>
+                                </div>
+                            </div>
+                            <div class="course-item scroll-animate" data-course="course2">
+                                <div class="course-details">
+                                    <span class="course-name" data-key="course2Name"></span>
+                                    <span class="course-institution" data-key="course3Institution"></span>
+                                </div>
+                                <div class="course-duration">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span data-key="course2Duration"></span>
+                                </div>
+                            </div>
+                            <div class="course-item scroll-animate" data-course="course3">
+                                <div class="course-details">
+                                    <span class="course-name" data-key="course3Name"></span>
+                                    <span class="course-institution" data-key="course3Institution"></span>
+                                </div>
+                                <div class="course-duration">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span data-key="course3Duration"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +128,7 @@
             <div class="container">
                 <h2 class="section-title scroll-animate" data-key="projectsTitle"></h2>
                 <span class="section-subtitle scroll-animate" style="transition-delay: 100ms;" data-key="projectsSubtitle"></span>
-                <div class="projects-container grid">
+                <div class="projects-container">
                     <div class="project-card scroll-animate">
                         <div class="project-data">
                             <h3 data-key="project1Title"></h3>
@@ -121,11 +155,13 @@
             </div>
         </section>
     </main>
-</div> <div id="skill-modal-overlay">
-    <div id="skill-modal">
+</div>
+
+<div id="modal-overlay">
+    <div id="modal-content">
         <span id="modal-close-btn" class="close-btn">&times;</span>
-        <h3 id="skill-modal-title"></h3>
-        <p id="skill-modal-description"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
     </div>
 </div>
 
