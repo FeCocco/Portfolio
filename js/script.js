@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* ======================= HEADER SCROLL ======================= */
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        // Adiciona a classe 'scrolled' se a rolagem for maior que 50 pixels
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
     /* ================================== ANIMACAO DE SCROLL ================================== */
     const animatedElements = document.querySelectorAll('.scroll-animate');
     const observer = new IntersectionObserver((entries) => {
